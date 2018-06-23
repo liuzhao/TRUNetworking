@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1F8125E4C0441C86FD572FA3 /* Pods-TRUNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRUNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRUNetworking_Example/Pods-TRUNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4073A162BFD2377976E98014 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4073A162BFD2377976E98014 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TRUNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRUNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +64,8 @@
 		799D9BA5B155F3FBB9BF55C7 /* Pods-TRUNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRUNetworking_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRUNetworking_Example/Pods-TRUNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8459621BF26A8A283EC8A805 /* Pods_TRUNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRUNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8FF89DD777C698831989D16A /* TRUNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TRUNetworking.podspec; path = ../TRUNetworking.podspec; sourceTree = "<group>"; };
-		93479FD1D9590F1CD12A5D4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8FF89DD777C698831989D16A /* TRUNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TRUNetworking.podspec; path = ../TRUNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93479FD1D9590F1CD12A5D4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F2D2CB68A768C23BA778EFB2 /* Pods-TRUNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRUNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRUNetworking_Tests/Pods-TRUNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,10 +319,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TRUNetworking_Example/Pods-TRUNetworking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/TRUNetworking/TRUNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRUNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
